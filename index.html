@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- build:css css/main.css -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fondamento&family=Grenze+Gotisch&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="js/scripts.js"></script>
+    <!-- endbuild -->
+
+    <body>
+        <nav class="navbar navbar-dark navbar-expand-sm fixed-top"> 
+            <div class="container">
+
+                <a class="navbar-brand" href="#"><img src="img/logo.svg" height="50" width="50"></a> 
+                
+
+                <a class="navbar-brand" href="#">To-Do-Ist</a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <div class="collapse navbar-collapse" id="Navbar">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-info fa-lg"></span> About Us</a></li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Resources</a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#"><i class="fa fa-exclamation-circle" aria-hidden="true"></i>    Reminders</a>
+                              <a class="dropdown-item" href="#"><i class="fa fa-check-square-o" aria-hidden="true"></i>    To-Do</a>
+                              <a class="dropdown-item" href="#"><i class="fa fa-pencil-square" aria-hidden="true"></i>    Notes</a>
+                          </li>
+                          
+                          
+                          <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
+                          
+                      </ul>
+                      <span class="navbar-text">
+                        <!-- <a data-toggle="modal" data-target="#loginModal"> -->
+                            <button class="btn btn-md" id="loginButton">
+                                <span class="fa fa-sign-in"></span> Login
+                            </button>
+                            <!--</a>-->
+                        </span>
+                        <span class="navbar-text">
+                            <!-- <a data-toggle="modal" data-target="#loginModal"> -->
+                                <button class="btn btn-md" id="signupButton">
+                                    <span class="fa fa-sign-in"></span> Sign-Up
+                                </button>
+                                <!--</a>-->
+                            </span>
+                        </div>
+                    </div>
+                    
+                </nav>
+                
+
+
+
+                <!--Login Modal-->
+                <div id="loginModal" class="modal fade" role="dialog">
+
+                    <div class="modal-dialog modal-lg" role="content">
+
+                        <!-- Modal content-->
+                        <div class="modal-content modal-popout-bg">
+
+                            <div class="modal-header">
+                                <h4 class="modal-title">Login </h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">       
+                                <div class="transbox"> <form id="f1" onsubmit = "return val_login()" method = "POST">
+                                    <br>
+                                    <h2 class="title">Welcome Back</h2>
+                                    <br>
+                                    <div class="container modal-form">
+
+                                        <div class="row">
+                                            <div class="col-12 ">
+                                                <label for="Username" >Username</label>
+                                            </div>
+                                            <div class="col-12 ">
+                                                <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+                                                <input type="text" class="input inputExpand" name="Username" placeholder="   Username">
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="row">
+                                            <div class="col-12 ">
+
+                                                <label for="Password " >Password</label>
+                                            </div>
+                                            <div class="col-12 ">
+                                                <span class="input-group-addon"><i class="fa fa-key" aria-hidden="true"></i></span>
+                                                <input type="password" class="input inputExpand" name="Password" placeholder="   Password">
+                                                
+                                                
+                                                <div class="modalsmall">
+                                                    &nbsp;<input class="form-check-input ml-1" type="checkbox"><label class="form-check-label ml-4"> Remember me  </label>
+                                                    <a href="#" class="pwforgot">&nbsp; Forgot Password?</a>
+                                                </div>
+
+                                                <div class="hint" id="demo"> 
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="row align-items-center">
+                                            <div class="col-12 loginButtonModal">
+                                                <button type="submit" class="hvr-float-shadow popup-button" formaction="login.php">L o g i n</button>
+                                            </div>
+
+                                        </div>
+                                        <div class="row  align-items-center signupnote">
+
+                                            New to To-Do-Ist?&nbsp;<a href="#" class="signup">  Sign-Up</a>
+                                        </div>
+                                    </div>
+                                </form> </div>           
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--Sign-Up Modal-->
+                <div id="signupModal" class="modal fade" role="dialog">
+
+                    <div class="modal-dialog modal-lg" role="content">
+
+                        <!-- Modal content-->
+                        <div class="modal-content modal-popout-bg">
+
+                            <div class="modal-header">
+                                <h4 class="modal-title">Sign-Up</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body modal-signup">    
+                                <div class="transbox">
+                                    <div class="container ">
+                                        <div class="row ">
+                                            <div class="col-7 brandName">
+                                                <div class="row">
+                                                    <div class="col-12 brandHead">
+                                                        <h1 class="">To-Do-Ist</h1>
+                                                    </div>
+                                                    <div class="col-12 signupModalinfo" >
+                                                        <p >Sign up and become one of the millions of people around the world using To-Do_Ist to organize and plan efficiently.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-5">
+                                                <!--Form-->
+                                                <form id="f2" onsubmit = "return val_signup()" method = "POST">
+
+                                                    <h2 class="title">Welcome</h2>
+                                                    <div class="container modal-form">
+
+                                                        <div class="row">
+                                                            <div class="col-12 ">
+                                                                <label for="Username" >Username</label>
+                                                            </div>
+                                                            <div class="col-12 ">
+                                                                <input type="text" class="input" name="Username" placeholder="   Username">
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div class="row">
+                                                            <div class="col-12 ">
+                                                                <label for="Email " >Email-Id</label>
+                                                            </div>
+                                                            <div class="col-12 ">
+                                                                <input type="email" class="input inputExpand" name="Email" placeholder="   Email">
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div class="row">
+                                                            <div class="col-12 ">
+                                                                <label for="Password " >Password</label>
+                                                            </div>
+                                                            <div class="col-12 ">
+                                                                <input type="password" class="input inputExpand" name="Password" placeholder="   Password">
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-12 ">
+                                                                <label for="confirmPassword " >Confirm Password</label>
+                                                            </div>
+                                                            <div class="col-12 ">
+                                                                <input type="password" class="input inputExpand" name="confirmPassword" placeholder="   Password">
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        
+                                                        <br>
+                                                        <div class="row align-items-center">
+                                                            <div class="col-12 loginButtonModal">
+                                                                <button type="submit" class="hvr-float-shadow popup-button" formaction="signup.php">S I G N-U P</button>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                        <div class="row  align-items-center signupnote">
+
+                                                            Already have a account?&nbsp;<a href="#" class="login">  Login</a>
+                                                        </div>
+                                                    </div>
+                                                </form> 
+                                            </div>
+                                        </div>
+                                    </div>                                   
+                                </div>                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <header class="jumbotron">
+                    <div class="container ">
+                        <div class="row row-header">
+
+                            <div class="col-12 col-sm-8">
+                                <div class="col-12">
+                                    <h1 align="text-center">To-Do-Ist</h1>
+                                    <h2 align="text-center"><b>Start Planning Today</b></h2><br>
+                                    <p  class="description">
+                                        <b><mark>Sign up and become one of the millions of people around the world using Brand Name to organize and plan efficitly.</mark></b>
+                                    </p>
+                                </div>
+
+                                <div class="col-12 main">
+                                    <button class="btn btn-danger get-started"><h3><b>GET STARTED</b> <i class="fa fa-sticky-note" aria-hidden="true"></i></h3></button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </header>
+
+                <div class="container">
+
+                    <div class="row row-content align-items-center" >
+                        <div class="col-12 col-sm-4 col-md-3">
+                            <h1>REMINDERS</h1>
+                        </div>
+                        <div class="col col-sm-7 col-md-6">
+                            <div class="media">
+                                <div class="media-body"><h2>Be Notified  <i class="fa fa-bell" aria-hidden="true"></i></h2>
+                                    <p class="d-none d-sm-block">
+                                        Want to make sure that your tasks are never forgotten and completed on time? Use the
+                                        To-Do-Ist to never miss an event. Get notified for all ur upcoming meetings, occasions and other happenings.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/reminder.svg" alt="To Do List" height="150px" width="150px">
+                    </div>
+
+                    <hr>
+
+                    <div class="row row-content align-items-center" >
+                        <div class="col-12 col-sm-4 order-sm-last col-md-3">
+                            <h1>TO DO LIST</h1>
+                        </div>
+                        <div class="order-sm-first ">
+                            <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/todo.svg" alt="To Do List" height="150px" width="150px">
+                        </div>
+                        <div class="col col-sm-7 col-md-6">
+                            <div class="media">
+                                <div class="media-body">
+                                    <h2>Check <i class="fa fa-check" aria-hidden="true"></i></h2>
+                                    <p class="d-none d-sm-block">
+                                        Go from an idea to action in seconds by using To-Do-Ist. It is a fun, flexible and free way to organize plans, projects and more. It performs adding, updating, deleting and manages a list of tasks to do.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="row row-content align-items-center" >
+                        <div class="col-12 col-sm-4 col-md-3">
+                            <h1>NOTES</h1>
+                        </div>
+                        <div class="col col-sm-7 col-md-6">
+                            <div class="media">
+                                <div class="media-body"><h2>Jot it Down <i class="fa fa-pencil" aria-hidden="true"></i></h2>
+                                    <p class="d-none d-sm-block">
+                                     Notes is a good helper to manage your schedules, assignments, etc. It gives you a quick and simple notepad editing experience. To-Do-Ist allows you to access them from your computer, phone or tablet.
+
+                                 </p>
+                             </div>
+                         </div>
+                     </div>
+                     <img src="img/notes.svg" class="d-flex ml-3 img-thumbnail align-self-center" alt="notes" >
+                 </div>
+
+             </div>
+
+
+             <footer class="footer">
+                <div class="container">
+                    <div class="row">             
+                        <div class="col-4 offset-1 col-sm-2">
+                            <h5>Links</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="./index.html">Home</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-7 col-sm-5">
+                            <h5>Our Address</h5>
+                            <address>
+                                123, ABCD ROAD<br>
+                                EFGHI TOWN, JKLMNOP<br>
+                                INDIA<br>
+                                <i class="fa fa-phone fa-lg"></i>: +91 xxxxxxxxxx<br>
+                                <i class="fa fa-fax fa-lg"></i>: +91 xxxxxxxxx    <br>
+                                <i class="fa fa-envelope fa-lg"></i>: 
+                                <a href="mailto:#">abc@gmail.com</a>
+                            </address>
+                        </div>
+                        <div class="col-12 col-sm-4 align-self-center">
+                            <div class="text-center">
+                                <a class="btn btn-social-icon btn-google" href="http://google.com"><i class="fa fa-google"></i></a>
+                                <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a>
+                                <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
+                                <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                                <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">             
+                        <div class="col-auto">
+                            <p>© Copyright 2020 Brand Name | Website by : Michelle </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+
+
+            <!-- build:js js/main.js -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+            <script src="js/scripts.js"></script>
+            <!-- endbuild -->
+            
+            
+        </body>
+        </html>

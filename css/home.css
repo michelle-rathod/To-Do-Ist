@@ -1,0 +1,202 @@
+    
+*{
+	box-sizing: border-box;
+}
+
+body {  
+  padding-top: 40px;
+}
+
+input[type=text] {
+  border: 1px solid black;
+}
+
+input[type=text1] {
+  border: 1px solid black;
+}
+
+
+/*-------------------NAVBAR------------------*/
+
+.navbar-brand{
+  font-family: 'Grenze Gotisch', cursive;
+  font-family: 'Fondamento', cursive;
+}
+
+.dropdown-item:hover{
+  background-color: white;
+  color: honeydew;
+}
+
+
+
+#logOutButton{
+  color: red;
+}
+
+#logOutButton a{
+  text-decoration: none;
+}
+.reminderCard{
+
+  display: flex;
+  align-content: left;
+  justify-content: left; 
+  color: black;
+  margin-bottom: 20px;
+}
+
+.reminderCard .card-body{
+  background-color: white;
+  color: black;
+}
+
+.toDoCard{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-content: left;
+  justify-content: left; 
+  color: white;
+}
+
+.toDoCard .card-header{
+  background-color: blanchedalmond;
+  color: black;
+  position: relative;
+}
+.toDoCard .card-header a{
+
+  background-color: blanchedalmond;
+  color: black;
+  text-decoration: none;
+  text-align: end;
+  align-self: end;
+  justify-self: end;
+  justify-items: end;
+  justify-content: end;
+  float: right;
+}
+
+.footer{
+  background-color: thistle;
+  padding-top: 20px;
+}
+
+#toDoInput{
+  background-color: inherit;
+  color: white;
+  border: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the list items */
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 8px;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Style the close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Style the header */
+.header {
+  background-color: #f44336;
+  color: white;
+  text-align: center;
+}
+
+/* Clear floats after the header */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the input*/
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+/* ADD button for notes */
+.btn {
+  background-image: white;
+  padding: 10px;
+  width: 10%;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
+
+ul{
+  list-style: none;
+}
+
+/*notes*/
+.new-note {
+  width: 100%;
+
+}
+.new-note .btn{
+  width: 50%;
+
+}
+.new-note input,
+.new-note textarea,
+.new-note button{
+  font-family: Arial;
+  padding: 15px;
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.note {
+  background-color: white;
+  width: 100%;
+  border: 1px solid black;
+  display: inline-block;
+  margin: 5px;
+  padding: 10px;
+  position: relative;
+  min-height: 100px;
+}
+
+.note .title{
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.note .title a {
+  color: black;
+}

@@ -1,0 +1,320 @@
+    
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+  padding: 50px 0px 0px 0px;
+  z-index: 0;
+}
+
+/*-------------------JUMBOTRON----------------*/
+ .jumbotron h1{
+    text-shadow: 3px 1px 1px #2b015c;  
+    font-size: 5em; 
+    font-family: 'Grenze Gotisch', cursive;
+    font-family: 'Fondamento', cursive;
+}
+
+.jumbotron h1:hover,.brandname:hover{
+  text-shadow: 3px 3px 1px black;
+}
+
+.jumbotron{
+  background-image: url('project.jpg');
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  /*background-color: #FADBD8;*/
+  color:  black;
+  font-family: 'Fondamento',cursive;
+}
+
+.jumbotron-image{
+  z-index: -1;
+  height: 500px;
+}
+
+.description{
+  font-size: larger;
+    font-family: 'Fondamento',cursive;
+  color: black;
+}
+.main {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  align-items: center ;
+  
+}
+
+.get-started{
+  border-radius: 12px;
+  color: #300a30;
+}
+
+.get-started:hover{
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
+
+
+
+/*-------------------NAVBAR------------------*/
+.navbar-dark {
+background-image: url('https://designshack.net/wp-content/uploads/background-textures.png'); 
+}
+
+.navbar-brand{
+  font-family: 'Grenze Gotisch', cursive;
+  font-family: 'Fondamento', cursive;
+}
+
+#loginButton,#signupButton{
+  color: floralwhite; }
+
+.dropdown-item:hover{
+  background-color: #5b4e77;
+  color: honeydew;
+}
+
+
+
+
+/*------------------BODY------------------------*/
+.img-thumbnail{
+  height: 300px;
+  width: 200px;
+  z-index: -1;
+  border: none;
+}
+
+.fa-bell{
+
+  color: gold;
+
+}
+
+.fa-check{
+
+  color: red;
+}
+
+.fa-pencil{
+  color:blue
+}
+
+
+
+/*---------FOOTER-------------*/
+.footer{
+  background-image: url('https://designshack.net/wp-content/uploads/background-textures.png');
+  background-color: thistle;
+  padding-top: 20px;
+}
+
+
+/*-----------------------------------MODAL------------------------------------*/
+.modal-body {
+  background-image: url('https://image.freepik.com/free-photo/top-view-desk-with-notebook-laptop_23-2148284329.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  text-align: center;
+
+}
+
+.modal-signup{
+  
+ background-image: url('https://images.unsplash.com/photo-1526280524276-51b1c8a46321?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+}
+
+.modal-form{
+  font-size: larger;
+
+}
+
+.modal-signup .modal-form{
+  font-size: large; 
+}
+
+.modal-form label{
+  color: #300a30;
+  font-weight: 600;
+}
+
+.modal-body h2{
+  text-align: center;
+  font-size: 3em;
+}
+
+
+.modal-body input{
+  border-radius: 12px;
+}
+
+.modalsmall{
+  text-align: center;
+  font-size: 0.7em;
+ 
+}
+
+
+.loginButtonModal{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.modal-body .inputExpand:focus {
+  width: 40%;
+  border-radius: 6px;
+}
+
+.signupnote{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font-size: smaller;
+  padding-top: 10px;
+}
+
+.hint{
+  font-size: .8em;
+  display: flex;
+  align-content: center;
+  margin-left: 260px;
+}
+
+.brandName{
+  display: flex;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.brandName h1{
+  text-shadow: 3px 1px 1px #black; 
+  padding-top: 5%;
+  padding-left: 10%; 
+  font-size: 5em; 
+  color: black;
+  font-family: 'Grenze Gotisch', cursive;
+  font-family: 'Fondamento', cursive;
+  
+}
+
+.brandName h1:hover{
+  text-shadow: 3px 3px 1px rgb(56, 3, 43);
+}
+
+
+.transbox{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(92, 82, 100, 0.3);
+  height: 100%;
+}
+
+
+.signupModalinfo{
+  display: flex;
+  align-content: left;
+  justify-content: left;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  margin-top: 0px;
+  color:  black;
+  font-size: 30px;
+  font-family: 'Grenze Gotisch';
+  padding-left: 50px;
+
+}
+
+.brandName .brandHead{
+  height: 10px;
+}
+
+.modal-signup label{
+  
+  padding-top: 5px;
+  padding-bottom: 2px;
+  color: black;
+  font-weight: 900;
+  
+}
+
+.hvr-float-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-float-shadow:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  /* W3C */
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+}
+.hvr-float-shadow:hover, .hvr-float-shadow:focus, .hvr-float-shadow:active {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  /* move the element up by 5px */
+}
+.hvr-float-shadow:hover:before, .hvr-float-shadow:focus:before, .hvr-float-shadow:active:before {
+  opacity: 1;
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
+  /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+
+.popup-button {
+  height: 50px;
+  align-self: center;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 1em;
+  text-transform: uppercase;
+  color: white;
+  text-shadow:1px 3px 3px #2b015c;
+  
+  /* Button shape & animation */
+  border-radius: 6px;
+  border: none;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-size: 200% auto;
+  color: white;
+  
+  box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+  background-image: linear-gradient(to right, #ad2e69,#be013c, #ad2e69);
+  transition : 0.5s;
+  
+}
+.popup-button:hover {
+    background-position: right center;
+  }  
